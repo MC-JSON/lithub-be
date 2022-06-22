@@ -4,7 +4,7 @@ const Book = require('../models/Book.js')
 const getBook = async (req, res) => {
   try {
     const book = await Book.find()
-    return res.status(200).json({ city })
+    return res.status(200).json({ book })
   } catch (error) {
     return res.status(500).send(error.message)
   }
